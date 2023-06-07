@@ -1,0 +1,11 @@
+if _G.Key == game:GetService("RbxAnalyticsService"):GetClientId() then
+    spawn(function()
+        while wait() do
+            print("working")
+        end
+    end)
+else
+        setclipboard(game:GetService("RbxAnalyticsService"):GetClientId())
+        wait(0.1)
+        game.Players.LocalPlayer:Kick(("Copied HWID to Clipboard"))
+end
