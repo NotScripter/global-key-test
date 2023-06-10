@@ -1,4 +1,4 @@
-if _G.Key == game:GetService("RbxAnalyticsService"):GetClientId() then
+if getgenv().Key == game:GetService("RbxAnalyticsService"):GetClientId() then
     spawn(function()
         while wait() do
             print("working")
